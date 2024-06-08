@@ -16,6 +16,7 @@
  * 10.Write test code that creates two instances of the Fan class, one using the default constructor and the other using the argument constructor.
  * Write code that displays the functionality of the Fan class methods.
  */
+package module1;
 
 public class Fan {
     static final int STOPPED = 0;
@@ -110,7 +111,7 @@ public class Fan {
         System.out.println("Powered: " + this.isOn + ", Speed: " + this.speed + ", Radius: " + this.radius
         + ", Color: " + this.color);
     }
-    
+
 
     // toString method.
     @Override

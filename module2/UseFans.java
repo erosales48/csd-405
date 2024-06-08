@@ -11,8 +11,10 @@
    5. Write test code that creates a collection of Fans and displays the functionality of all of the
       Fan instances in the collection.
  */
-
+ package module2;
+ 
  import java.util.*;
+ import module1.Fan;
 
  public class UseFans {
      // Method to display a collection of Fan instances without using the toString() method.
