@@ -105,6 +105,14 @@ public class Fan {
         color = (isOn)? "green" : "red";
     }
 
+    //Display information without using the toString() method.
+    public void display() {
+        System.out.println("Powered: " + this.isOn + ", Speed: " + this.speed + ", Radius: " + this.radius
+        + ", Color: " + this.color);
+    }
+    
+
+    // toString method.
     @Override
     public String toString() {
         return "[ Powered: " + isOn + ", speed= " + speed + ", radius= " + radius
