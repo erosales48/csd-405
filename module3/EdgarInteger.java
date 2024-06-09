@@ -1,9 +1,15 @@
+import java.math.*;
+
 public class EdgarInteger {
     private int edgar;
 
     // Constructor
     public EdgarInteger(int edgar) {
         this.edgar = edgar;
+    }
+
+    public EdgarInteger() {
+        this.edgar = 51;
     }
 
     // Getter
@@ -81,9 +87,13 @@ public class EdgarInteger {
 
     // Test code
     public static void main(String[] args) {
-        EdgarInteger int1 = new EdgarInteger(5);
-        EdgarInteger int2 = new EdgarInteger(5);
-        EdgarInteger int3 = new EdgarInteger(10);
+        EdgarInteger int1 = new EdgarInteger();
+        EdgarInteger int2 = new EdgarInteger(51);
+        EdgarInteger int3 = new EdgarInteger(22);
+
+        System.out.println("int1: " + int1.getEdgar());
+        System.out.println("int2: " + int2.getEdgar());
+        System.out.println("int3: " + int3.getEdgar());
 
         // Test non-static methods
         System.out.println("int1 is even: " + int1.isEven()); // false
@@ -95,13 +105,13 @@ public class EdgarInteger {
         System.out.println("int3 is prime: " + int3.isPrime()); // false
 
         // Test static methods with int
-        System.out.println("5 is even: " + EdgarInteger.isEven(5)); // false
-        System.out.println("5 is odd: " + EdgarInteger.isOdd(5)); // true
-        System.out.println("5 is prime: " + EdgarInteger.isPrime(5)); // true
+        System.out.println("51 is even: " + EdgarInteger.isEven(51)); // false
+        System.out.println("51 is odd: " + EdgarInteger.isOdd(51)); // true
+        System.out.println("51 is prime: " + EdgarInteger.isPrime(51)); // true
 
-        System.out.println("10 is even: " + EdgarInteger.isEven(10)); // true
-        System.out.println("10 is odd: " + EdgarInteger.isOdd(10)); // false
-        System.out.println("10 is prime: " + EdgarInteger.isPrime(10)); // false
+        System.out.println("22 is even: " + EdgarInteger.isEven(22)); // true
+        System.out.println("22 is odd: " + EdgarInteger.isOdd(22)); // false
+        System.out.println("22 is prime: " + EdgarInteger.isPrime(22)); // false
 
         // Test static methods with EdgarInteger
         System.out.println("int1 is even (static): " + EdgarInteger.isEven(int1)); // false
@@ -114,8 +124,8 @@ public class EdgarInteger {
 
         // Test equals methods
         System.out.println("int1 equals int2: " + int1.equals(int2)); // true
-        System.out.println("int1 equals 5: " + int1.equals(5)); // true
+        System.out.println("int1 equals 51: " + int1.equals(51)); // true
         System.out.println("int1 equals int3: " + int1.equals(int3)); // false
-        System.out.println("int1 equals 10: " + int1.equals(10)); // false
+        System.out.println("int1 equals 22: " + int1.equals(22)); // false
     }
 }
