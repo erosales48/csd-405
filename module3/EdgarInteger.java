@@ -1,8 +1,27 @@
+/* Edgar Rosales
+ * 9 June 2024
+ * CSD405-J318 Intermediate Java Programming
+ * 
+ * Module 3 Assignment
+ * Create a class called EdgarInteger.
+ * this class is to contain:
+ * 1. A private int variable called edgar
+ * 2. A constructor that takes and sets the initial value.
+ * 3. Getters and setters methods.
+ * 4. Non-static methods titled isEven(), isOdd(), and isPrime() returning true or false based on the variable's value.
+ * 5. Static methods with signatures isEven(int), isOdd(int), and isPrime(int) with the same basic logic as the previous methods 
+ *    with results based on the parameter.
+ * 6. Static methods with signatures isEven(Integer), isOdd(Integer), and isPrime(integer) with the same basic logic as the previous
+ *    methods with results based on the parameter.
+ * 7. The methods equals(int) and equals(Integer) which return true if int values are equal and false if they are not.
+ * 8. Write test code that creates three instances, two with the same value and one with a different value.
+ * 9. Write test code that ensures all methods function correctly.
+ */
 
 public class EdgarInteger {
     private int edgar;
 
-    // Constructor
+    // Constructors
     public EdgarInteger(int edgar) {
         this.edgar = edgar;
     }
@@ -42,7 +61,7 @@ public class EdgarInteger {
         return true;
     }
 
-    // Static methods
+    // Static methods int
     public static boolean isEven(int value) {
         return value % 2 == 0;
     }
@@ -63,6 +82,7 @@ public class EdgarInteger {
         return true;
     }
 
+    // Static methods Integer
     public static boolean isEven(EdgarInteger obj) {
         return obj.getEdgar() % 2 == 0;
     }
@@ -84,7 +104,7 @@ public class EdgarInteger {
         return this.edgar == obj.getEdgar();
     }
 
-    // Test code
+    // Main - Test code
     public static void main(String[] args) {
         EdgarInteger int1 = new EdgarInteger();
         EdgarInteger int2 = new EdgarInteger(53);
