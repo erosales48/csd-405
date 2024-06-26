@@ -2,5 +2,8 @@
     "java.configuration.updateBuildConfiguration": "interactive",
     "cSpell.words": [
         "gcal"
+    ],
+    "java.project.referencedLibraries": [
+        "c:/Program Files/Java/javafx-sdk-22.0.1/lib/*.jar"
     ]
 }
